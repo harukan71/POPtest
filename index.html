@@ -1,0 +1,87 @@
+# POPtest
+<!DOCTYPE html>
+<html lang="a">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP作成</title>
+
+</head>
+<main>
+    <div class="title">
+        <h1>POP作成</h1>
+        <p><img src="img/きねこ.png" alt="黄猫"></p>
+        <p1><img src="img/BAロゴ.png" alt="Bアポロゴ"></p1>
+        <h5><span>※</span>は必須項目です</h3>
+    </div>
+</main>
+<body>
+    <form action="program.php" method="post">
+        <dl>
+            <dt>限定の有無<span class="must">※</span</dt>
+                <dd>
+                    <input type="radio" name="limited" value="limited">限定
+                    <input type="radio" name="limited" value="classic">定番
+
+                </dd>
+                <dt>展開開始日</dt>
+                <dd>
+                    <input type="date" name="date">
+                </dd>
+                <dt>ブランド名<span class="must">※</span></dt>
+                <dd>
+                    <input type="text" name="name1" required placeholder="ココウェル" style="width: 300px;">
+                </dd>
+                <dt>商品名<span class="must">※</span></dt>
+                <dd>
+                    <textarea name="item" required placeholder="ココナッツオイル" cols="20" rows="3" style="width: 300px;"></textarea>
+                </dd>
+                <dt>容量（単位 英数は半角入力）</dt>
+
+                <dd>
+                    <input type="text" name="capacity" style="width: 300px;">
+                </dd>
+                <dt>価格（税抜）<span class="must">※</span></dt>
+                <dd>
+                    <input type="text" name="price" id="form-price" maxlength="6" style="width: 100px;">
+                </dd>
+                <dt>税率<span class="must">※</span></dt>
+                <dd>
+                    <input type="radio" name="tax" value="tax8">8%
+                    <input type="radio" name="tax" value="tax10">10%
+
+                   
+                </dd>
+            
+                <dt>コメント1行目（14文字以内）</dt>
+                <dd>
+                    <input type="text" name="comment" maxlength="14" style="width: 230px;">          
+                           
+                </dd>
+                <dt>コメント2行目（14文字以内）</dt>
+                <dd>
+                    <input type="text" name="comment" maxlength="14" style="width: 230px;">          
+                </dd>
+                <dt>コメント3行目（14文字以内）</dt>
+                <dd>
+                    <input type="text" name="comment" maxlength="14" style="width: 230px;">          
+                            
+                </dd>
+                <dt>コメント4行目（14文字以内）</dt>
+                <dd>
+                    <input type="text" name="comment" maxlength="14" style="width: 230px;">          
+     
+                </dd>
+                <dt>注釈</dt>
+                <dd>
+                    <input type="caution"  placeholder="※妊娠・妊婦の方はご使用をお控えください" style="width: 400px;">
+                </dd>
+            </dl>
+            <p class="submit"><input type="submit" name="submit" value="送信する"></p>
+            
+        </dl>
+    </form>
+</body>
+</html>
